@@ -2,6 +2,8 @@
 Demo of naming and some information about PEP8
 www.python.org/dev/peps/pep-0008/
 """
+EUR_USD_EXCHANGE_RATE = 1.20
+
 
 # Bad examples
 var = ... # doesn't mean something useful 
@@ -24,3 +26,20 @@ postal_code = 94500
 # Two words concatenated : using snake case
 street_name = "Main Street"
 
+
+# Function names
+def convert(amout): # BAD : The name doesn't tell the purpose of the function
+    return amount * 1.20
+
+def convertEur2Usd(amount): # Function name should be lowercase separated by underscore
+    return amount * 1.20
+
+def convert_eur_to_usd (amount): # More clear
+    return amount * 1.20 # The 1.20 should be a constant, because if we use 1.20 many times, we have to change it everywhere
+
+def convert_eur_to_usd (amount): # Excellent using constant
+    return amount * EUR_USD_EXCHANGE_RATE
+
+
+# Class names (PascalCase)
+class RectangleShape:
