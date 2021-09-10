@@ -2,6 +2,9 @@
 Demo of naming and some information about PEP8
 www.python.org/dev/peps/pep-0008/
 """
+from pygame import init
+
+
 EUR_USD_EXCHANGE_RATE = 1.20
 
 
@@ -43,3 +46,9 @@ def convert_eur_to_usd (amount): # Excellent using constant
 
 # Class names (PascalCase)
 class RectangleShape:
+    def __init__(self, width, length) -> None:
+        self.width = width
+        self.length = length
+    
+    def calculate_area(self):
+        return self.width * self.length
