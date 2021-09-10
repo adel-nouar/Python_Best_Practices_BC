@@ -1,0 +1,10 @@
+Day 1: "Pythonic" code
+        - Introduction
+        - Python tools
+        - Python conventions
+            - Naming
+            - Documentation
+            - PEP8
+            - Using "pylint"
+        - "Pythonic" code
+            - List comprehension
