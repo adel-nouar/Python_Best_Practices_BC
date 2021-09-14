@@ -62,7 +62,7 @@ finally:
 
 
 # Custom exceptions (creating our own)
-class NegativeNumberError:
+class NegativeNumberError(Exception):
     """Custom exception for negative numbers."""
 
 
