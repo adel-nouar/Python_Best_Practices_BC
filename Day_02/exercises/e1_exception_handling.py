@@ -12,7 +12,10 @@ database = [
 
 def main():
     for person in database:
-        print(person['email'])
+        try:
+            print(person['email'])
+        except KeyError:
+            print("Email address missing")
 
 
 if __name__ == '__main__':
