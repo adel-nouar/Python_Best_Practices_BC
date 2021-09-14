@@ -1,0 +1,11 @@
+Day 2: Robust code
+    - Introduction
+    - Exception handling
+    - Context managers
+    - Type hints
+        - Dynamic typing
+        - Static typing
+        - Type hints in Python (PEP 484 introduced in Python 3.5)
+    - Unit testing
+            - Test Driven Development
+            - Pytest
