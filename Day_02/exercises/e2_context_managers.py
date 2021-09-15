@@ -19,9 +19,8 @@ def main():
 
 
 def write_to_file(text):
-    file = open("exercise.txt", "w")
-    file.write(text)
-    file.close()
+    with open("exercise.txt", "w") as file:
+        file.write(text)
 
 
 if __name__ == "__main__":
