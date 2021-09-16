@@ -60,3 +60,29 @@ account_jessica = BankAccount("Jessica", 500)
 account_jessica.show_balance()
 account_jessica.deposite(1000)
 account_jessica.show_balance()
+
+
+
+# Inheritance 
+class Base:
+    pass
+
+
+class Derived(Base):
+    pass
+
+
+class Vehicle:
+    description = "This is a vehicle"
+
+    def drive(self):
+        print("Driving")
+
+    def brake(self):
+        print("Braking")
+    
+class Car(Vehicle):
+    wheels = 4
+
+class Truck(Vehicle):
+    wheels = 4
