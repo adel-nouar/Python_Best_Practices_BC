@@ -1,0 +1,8 @@
+Day 3: Code reuse (object oriented programming)
+
+    - Object Oriented Programming
+        - Classes and instances
+    - Best practices
+        - Magic methods
+        - Properties
+    - New in Python 3.7: "Dataclasses"
