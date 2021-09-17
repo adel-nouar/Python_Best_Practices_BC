@@ -17,3 +17,11 @@ class Product:
         self.name = name
         self.description = description
         self.price = price
+
+
+# Solution
+class DataClassProduct:
+    identifier: str
+    name: str
+    price: float
+    description: str = ""
