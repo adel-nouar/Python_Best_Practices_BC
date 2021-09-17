@@ -20,8 +20,11 @@ class Product:
 
 
 # Solution
+# 
+@dataclass
 class DataClassProduct:
-    identifier: str
-    name: str
-    price: float
-    description: str = ""
+    """Class for a product."""
+    identifier:str
+    name:str
+    price:float
+    description:str = ""
