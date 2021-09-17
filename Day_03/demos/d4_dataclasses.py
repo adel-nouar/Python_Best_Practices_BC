@@ -1,5 +1,5 @@
 """
-Demo dataclasses
+Demo dataclasses : Used especially as class container with no complex data and methods to implements
 PEP 557
 """
 from dataclasses import dataclass # Since python 3.7
