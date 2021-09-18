@@ -11,12 +11,18 @@ https://docs.python.org/3/library/functools.html#functools.wraps
 
 # Exercise
 import time
+from functools import wraps # we could take __name__, __doc__ from the original function
 
 
 def timer(func):
+    @wraps(func)
     def wrapper():
-        """YOUR CODE"""
-        ...
+        """Decorate function that gives the time of a given function"""
+        start_time = time.perf_counter()
+        result = func()
+        end_time = time.perf_counter()
+        print(f"Run time was {end_time - start_time} seconds")
+        return result
     return wrapper
 
 
