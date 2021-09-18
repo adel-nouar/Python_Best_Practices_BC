@@ -8,8 +8,11 @@ You can follow the example from demo quite closely.
 
 # Exercise
 def countdown(n):
-    """Your code"""
-    ...
+    """Generator that count down a given number"""
+    print("Counting down...")
+    while n > 0:
+        yield n
+        n -= 1
 
 
 for x in countdown(5):
