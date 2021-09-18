@@ -1,0 +1,7 @@
+Day 4 : Intermediate Python
+
+    - Logging
+    - Intermediate concepts
+        - Decorators
+        - Generators
+    - Pathlib
