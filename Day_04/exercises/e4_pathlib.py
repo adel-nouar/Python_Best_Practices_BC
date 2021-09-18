@@ -13,13 +13,17 @@ Docs: https://docs.python.org/3/library/pathlib.html#correspondence-to-tools-in-
 # Exercise 1
 from pathlib import Path
 print(Path.cwd())
-...  # your code
+
+file = Path("zen.txt")
+print(file.with_stem("zen2")) # Changing the file name
+
 
 
 # Exercise 2
-import os
-os.mkdir("exercise_mkdir")
-print(os.path.exists("exercise_mkdir"))
+# import os
+# os.mkdir("exercise_mkdir")
+# print(os.path.exists("exercise_mkdir"))
 
 # With 'pathlib' instead of 'os'
-...  # your code
+p = Path("exercise_mkdir")
+p.mkdir(exist_ok=True)
